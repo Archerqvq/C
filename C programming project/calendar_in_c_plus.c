@@ -88,7 +88,7 @@ void calendar(int year, int daycode)
         for (; day <= days_in_month[month]; day++)
         {
             printf("   %2d", day);
-            if ((day % 7) == (7 - daycode))
+            if ((day % 7) == (7 - daycode) % 7)
             {
                 printf("\n");
             }
